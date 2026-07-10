@@ -12,25 +12,28 @@
 # 1 and itself.
 # ----------------------------------------------------------
 
-def Even_Number(No):
-    iCnt = 0
-    
-    for iCnt in range(1,No):
-        if(No % iCnt == 0):
+def CheckPrime(No):
+
+    if No <= 1:
+        return False
+
+    for iCnt in range(2, No):
+        if (No % iCnt == 0):
             return False
         else:
             return True
 
 def main():
-    print("Enter the Number")
-    Value1 = int (input())
 
-    Ret = Even_Number(Value1)
+    print("Enter the Number : ")
+    Value = int(input())
 
-    if(Ret == True):
-        print(f"{Value1} is Prime Number")
+    Ret = CheckPrime(Value)
+
+    if (Ret == True):
+        print("It is Prime Number")
     else:
-         print(f"{Value1} is Not Prime Number")
+        print("It is Not Prime Number")
 
 if __name__ == "__main__":
     main()
