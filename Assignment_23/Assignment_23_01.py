@@ -48,8 +48,6 @@ def Sum_Even(No):
     print(f" Processe Id : {os.getpid()}" f"Input Number : {No}" f" Sum of Even Numbers : {Sum}")
     return Sum
     
-
-
 def main():
 
     Data = [1000000, 2000000, 3000000, 4000000]
